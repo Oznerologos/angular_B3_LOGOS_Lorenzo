@@ -1,1 +1,26 @@
-<p>login works!</p>
+<!-- <form class="example-form"> -->
+<mat-form-field class="example-full-width">
+  <input type="text" matInput placeholder="Usrname" [(ngModel)]="username" />
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+  <input
+    type="password"
+    matInput
+    placeholder="Password"
+    [(ngModel)]="password"
+  />
+</mat-form-field>
+
+<button
+  mat-raised-button
+  color="primary"
+  type="submit"
+  name="submit"
+  (click)="connexion()"
+>
+  Connexion
+</button>
+<!-- </form> -->
+
+<mat-spinner *ngIf="logging"> </mat-spinner>
