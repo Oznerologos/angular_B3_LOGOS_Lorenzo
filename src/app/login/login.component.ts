@@ -14,9 +14,9 @@ export class LoginComponent implements OnInit {
   logged = false;
   logging = false;
 
-  constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
+  constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   connexion() {
     this.http
